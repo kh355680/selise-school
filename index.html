@@ -29,7 +29,7 @@
         }
         
         #todo-app {
-            border: 1px solid black;
+            border: 1px dotted black;
             height: 272px;
         }
         
@@ -43,11 +43,21 @@
             height: 73px;
         }
         
+        #thumbnail-block-content-area {
+            padding-top: 0px;
+        }
+        
         .thumbnail-block {
-                border: 5px solid black;
-    display: inline;
-    padding: 11px;
-
+            border: 1px solid black;
+            display: inline-block;
+            margin-top: 6px;
+            margin-left: 55px;
+            width: 100px;
+            height: 80px;
+        }
+        
+        #footer-content {
+            padding-left: 300px;
         }
     </style>
 </head>
@@ -65,14 +75,15 @@
             <article class="description"> Image with Description Area 1 </article>
             <article class="description"> Image with Description Area 2 </article>
         </section>
-        <section id="thumbnail-block-content-are">
-            <span class="thumbnail-block"></span>
-            <span class="thumbnail-block"></span>
-            <span class="thumbnail-block"></span>
-            <span class="thumbnail-block"></span>
+        <section id="thumbnail-block-content-area">
+            <div class="thumbnail-block"></div>
+            <div class="thumbnail-block"></div>
+            <div class="thumbnail-block"></div>
+            <div class="thumbnail-block"></div>
         </section>
     </main>
     <footer>
+        <span id="footer-content">footer area</span>
     </footer>
 </body>
 
