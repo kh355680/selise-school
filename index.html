@@ -9,6 +9,10 @@
             width: 100%;
         }
         
+        #heading {
+            display: inline-block;
+        }
+        
         main {
             border: 1px solid blueviolet;
             height: 521px;
@@ -22,7 +26,7 @@
         }
         
         #logo {
-            display: inherit;
+            display: inline-block;
             width: 20%;
             border: 1px solid black;
             height: 100%;
@@ -31,6 +35,10 @@
         #todo-app {
             border: 1px dotted black;
             height: 272px;
+        }
+        
+        #search-box {
+            width: 400px;
         }
         
         #description-content-area {
@@ -59,16 +67,25 @@
         #footer-content {
             padding-left: 300px;
         }
+        
+        #logo-icon {
+            width: 143px;
+            height: 60px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div id="logo" tabindex="1">Logo</div>
-        <div id="heading"></div>
+        <div id="logo" tabindex="1">
+            <img id="logo-icon" src="todo.jpg" />
+        </div>
+        <div id="heading">
+            <input tabindex="2" id="search-box" type="text" placeholder="search todo">
+        </div>
     </header>
     <main>
-        <section id="todo-app" tabindex="2">
+        <section id="todo-app" tabindex="3">
             Todo App Section
         </section>
         <section id="description-content-area">
@@ -76,13 +93,13 @@
             <article class="description"> Image with Description Area 2 </article>
         </section>
         <section id="thumbnail-block-content-area">
-            <div class="thumbnail-block"></div>
-            <div class="thumbnail-block"></div>
-            <div class="thumbnail-block"></div>
-            <div class="thumbnail-block"></div>
+            <div tabindex="4" class="thumbnail-block"></div>
+            <div tabindex="5" class="thumbnail-block"></div>
+            <div tabindex="6" class="thumbnail-block"></div>
+            <div tabindex="7" class="thumbnail-block"></div>
         </section>
     </main>
-    <footer>
+    <footer tabindex="8">
         <span id="footer-content">footer area</span>
     </footer>
 </body>
